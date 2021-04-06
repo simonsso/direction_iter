@@ -44,12 +44,10 @@ mod tests {
     fn it_works() {
         let mut it = super::DirectionIter::new((0, 0), (10, 10));
         let ans: Vec<(usize, usize)> = it.collect();
-        assert_eq!(ans, vec![ (1, 0) , (0, 1)]);
+        assert_eq!(ans, vec![(1, 0), (0, 1)]);
 
         let mut it = super::DirectionIter::new((10, 10), (100, 100));
         let ans: Vec<(usize, usize)> = it.collect();
-        assert_eq!(ans, vec![(11, 10), (9, 10), (10, 9), (10, 11), ]);
+        assert_eq!(ans, vec![(11, 10), (9, 10), (10, 9), (10, 11),]);
     }
 }
-
-
